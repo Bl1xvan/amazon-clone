@@ -1,0 +1,9 @@
+:root{
+    --darkgray: rgb(37, 40, 42);
+}
+
+.gray-div{
+    background-color: var(--darkgray);
+    color: white;
+    padding: 10px;
+}

@@ -1,7 +1,11 @@
+import useWindowResize from "../../../hooks/useWindowResize"
+
 export default function Topsection(){
+  const {width} = useWindowResize()
+  const screensize = width < 600 ? "flex-column" : "grid-small-half-column"
   return(
-        <div className="grid-small-half-column">
-            <div className="flex-row flex-end" style={{backgroundColor: "pink"}}>
+        <div className={screensize}>
+            <div className="flex-row flex-end">
                 <span>image icon here</span>
                 <span>amazon image here</span>
             </div>
