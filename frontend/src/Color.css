@@ -1,9 +1,14 @@
 :root{
     --darkgray: rgb(37, 40, 42);
+    --yellow: rgb(255, 220, 82);
 }
 
 .gray-div{
     background-color: var(--darkgray);
     color: white;
     padding: 10px;
+}
+
+.yellow-div{
+    background-color: var(--yellow);
 }
