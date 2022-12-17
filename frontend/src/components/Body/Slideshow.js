@@ -6,6 +6,7 @@ export default function Slideshow() {
       height: "40vh",
       width: "100%",
       backgroundImage: `url(${Picture1})`,
+      backgroundSize: "cover",
       display: "flex",
       alignItems: "flex-end",
       justifyContent: "center"
