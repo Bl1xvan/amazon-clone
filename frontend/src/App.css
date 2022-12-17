@@ -66,3 +66,8 @@ a{
 .rounded{
   border-radius: 10px;
 }
+
+.mini-slide-show{
+  background-color: aqua;
+  z-index: 2;
+}
