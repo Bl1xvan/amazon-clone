@@ -67,7 +67,21 @@ a{
   border-radius: 10px;
 }
 
+.slideshow-container{
+  position: relative;
+  overflow-x: hidden;
+  height: 200px;
+}
+
 .mini-slide-show{
-  background-color: aqua;
-  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  position: absolute;
+  left: 0;
+  height: inherit;
+  gap: 10px;
+}
+
+.mini-slide-show *{
+  height: inherit;
 }
