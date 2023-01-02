@@ -1,3 +1,5 @@
+import AddListItem from "./AddListItem"
+
 const addList = [
     {
         addHeader: "New Year deals", 
@@ -28,4 +30,12 @@ const addList = [
     }
 ]
 
-export default addList
+export default function Adds(){
+    return(
+    <div className="addList1">
+        {addList.map(item => {
+            const {addHeader, gridClass, addItems} = item
+            return(<AddListItem addHeader={addHeader} gridClass={gridClass} addItems={addItems} />)
+        })}
+    </div>)
+}
