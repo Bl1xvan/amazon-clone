@@ -50,13 +50,13 @@ export default function useDrag(id) {
       checkBoundary()
 
   
-      container.addEventListener('touchstart', onMouseDown);
-      window.addEventListener('touchend', onMouseUp);
-      container.addEventListener('touchmove', onMouseMove)
+      container.addEventListener('pointerdown', onMouseDown);
+      window.addEventListener('pointerup', onMouseUp);
+      container.addEventListener('pointermove', onMouseMove)
       
       const cleanup = () => {
-        container.removeEventListener('tocuhstart', onMouseDown)
-        container.removeEventListener('touchmove', onMouseMove)
+        container.removeEventListener('pointerdown', onMouseDown)
+        container.removeEventListener('pointermove', onMouseMove)
       }
 
       return cleanup
