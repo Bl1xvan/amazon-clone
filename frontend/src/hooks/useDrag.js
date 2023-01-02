@@ -36,12 +36,10 @@ export default function useDrag(id) {
 
         if(parseInt(target.style.left) > 0){
           target.style.left = "0px"
-          console.log("start")
         }
         
         if(inner.right < outer.right){
           target.style.left = `-${inner.width - outer.width}px`
-          console.log("stop")
         }
 
 
