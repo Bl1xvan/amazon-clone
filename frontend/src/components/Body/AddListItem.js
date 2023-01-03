@@ -21,7 +21,7 @@ const GridComp = ({gridClass, addItems}) => {
 
 export default function AddListItem({addHeader, gridClass, addItems}){
   return(
-  <div className="addstyle">
+  <div className="square addstyle">
     <h3>{addHeader}</h3>
     <GridComp gridClass={gridClass} addItems={addItems}/>
   </div>)
