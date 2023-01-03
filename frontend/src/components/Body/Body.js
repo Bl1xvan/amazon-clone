@@ -1,5 +1,6 @@
 import Signin from "./Signin"
 import Slideshow from "./Slideshow"
+import Adds from "./Adds"
 import useWindowResize from "../../hooks/useWindowResize"
 
 export default function Body() {
@@ -7,5 +8,6 @@ export default function Body() {
     return(<div>
               <Signin />
               {width < 700 && <Slideshow /> }
+              <Adds />
            </div>)
 };

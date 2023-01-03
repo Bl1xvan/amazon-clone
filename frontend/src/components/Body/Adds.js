@@ -16,7 +16,7 @@ const addList = [
     },
     {
         addHeader:"The New Year Sale",
-        gridClass: "doubleRow", 
+        gridClass: "doubleRows", 
         addItems: [
         {image: "image 1", title: "title3-1", link: "link"},
         {image: "image 2", title: "title3-2", link: "link"},
@@ -26,7 +26,7 @@ const addList = [
     },
     {
         addHeader: "Send eGift Cards instantly",
-        gridClass: "doubleRow", 
+        gridClass: "doubleRows", 
         addItems: [
         {image: "image 1", title: "title4-1", link: "link"},
         {image: "image 2", title: "title4-2", link: "link"},
@@ -38,7 +38,7 @@ const addList = [
 
 export default function Adds(){
     return(
-    <div className="addList1">
+    <div id="addList1" className="grid-small-half-column grid-gap">
         {addList.map(item => {
             const {addHeader, gridClass, addItems} = item
             return(<AddListItem addHeader={addHeader} gridClass={gridClass} addItems={addItems} />)
