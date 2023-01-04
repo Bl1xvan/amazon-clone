@@ -7,7 +7,9 @@ export default function Body() {
     const { width } = useWindowResize()
     return(<div>
               <Signin />
+              <div className="side-margins">
               {width < 700 && <Slideshow /> }
               <Adds />
+              </div>
            </div>)
 };

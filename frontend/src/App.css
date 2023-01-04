@@ -64,6 +64,14 @@ a{
   justify-content: space-around;
 }
 
+.flex-start{
+  align-items: flex-start;
+}
+
+.flex-stretch{
+  align-self: stretch;
+}
+
 .full-width{
   width: 100%;
 }

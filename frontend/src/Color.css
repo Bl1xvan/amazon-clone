@@ -2,6 +2,11 @@
     --darkgray: rgb(37, 40, 42);
     --yellow: rgb(255, 220, 82);
     --addstyle: rgb(213, 242, 255);
+    --magenta: rgb(255, 184, 244);
+}
+
+.magenta-div{
+    background-color: var(--magenta);
 }
 
 .gray-div{
