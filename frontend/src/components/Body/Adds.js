@@ -1,4 +1,5 @@
 import AddListItem from "./AddListItem"
+import useWindowResize from "../../hooks/useWindowResize"
 
 const addList = [
     {
@@ -76,9 +77,12 @@ const addList = [
 ]
 
 export default function Adds(){
+    const { width } = useWindowResize()
+
+    let activeList = (width > 657 && width < 983) || width >= 1307 ? addList.slice(0, 8) : addList
     return(
     <div id="addList1" className="grid-add-column grid-gap">
-        {addList.map(item => {
+        {activeList.map(item => {
             const {addHeader, gridClass, addItems} = item
             return(<AddListItem addHeader={addHeader} gridClass={gridClass} addItems={addItems} />)
         })}

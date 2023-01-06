@@ -6,10 +6,10 @@ import useWindowResize from "../../hooks/useWindowResize"
 export default function Body() {
     const { width } = useWindowResize()
     return(<div>
-              <Signin />
-              <div className="side-margins">
-              {width < 700 && <Slideshow /> }
-              <Adds />
+              {width < 700 && <Signin /> }
+              <div className={`bottom-margins ${width > 500 && "side-margins"}`}>
+                {width < 700 && <Slideshow /> }
+                <Adds />
               </div>
            </div>)
 };
