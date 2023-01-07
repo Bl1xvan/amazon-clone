@@ -8,14 +8,13 @@ const GridComp = ({gridClass, addItems}) => {
         display: "grid",
         gridTemplateColumns: activeColumn[gridClass],
         gap: ".5em",
-        marginTop: "10px",
-        height: "100%"
+        marginTop: "10px"
     }
 
 
 
     return(    
-    <div style={styles} className="add-group-grid yellow-div">
+    <div style={styles} className="yellow-div">
         {addItems.map(item => {
             const {image, title, link} = item
             return(<div className="magenta-div"><h4>{title}</h4><p>{image}</p><p>{link}</p></div>)
@@ -34,9 +33,7 @@ export default function AddListItem({addHeader, gridClass, addItems}){
     const styles= {
         display: "grid",
         padding: "20px",
-        gridTemplateRows: activeRow[gridClass],
-        position: "relative",
-        height: "100%"
+        gridTemplateRows: activeRow[gridClass]
     }
 
   return(

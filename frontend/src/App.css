@@ -104,7 +104,6 @@ a{
 }
 
 .square{
-  aspect-ratio: 1/1.2;
   position: relative;
 }
 
@@ -126,10 +125,10 @@ a{
  margin-bottom: 25px;
 }
 
-@supports not (aspect-ratio: 1 / 1.2){
+
   .square::before{
     float: left;
-    padding-top: 100%;
+    padding-top: 120%;
     content: "";
   }
 
@@ -139,5 +138,5 @@ a{
     clear: both;
   }
 
-}
+
 
