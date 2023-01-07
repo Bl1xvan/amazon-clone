@@ -119,7 +119,6 @@ a{
 @supports not (aspect-ratio: 1 / 1.2){
   .square::before{
     float: left;
-    padding-top: 100%;
     content: "";
   }
 
