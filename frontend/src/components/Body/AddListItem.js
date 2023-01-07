@@ -8,7 +8,8 @@ const GridComp = ({gridClass, addItems}) => {
         display: "grid",
         gridTemplateColumns: activeColumn[gridClass],
         gap: ".5em",
-        marginTop: "10px"
+        marginTop: "10px",
+        height: "100%"
     }
 
 
@@ -24,16 +25,10 @@ const GridComp = ({gridClass, addItems}) => {
 
 
 export default function AddListItem({addHeader, gridClass, addItems}){
-
-    const activeRow = {
-        single: "auto 1fr",
-        doubleRows: "auto 1fr"
-    }
-
     const styles= {
-        display: "grid",
-        padding: "20px",
-        gridTemplateRows: activeRow[gridClass]
+        display: "flex",
+        flexDirection: "column",
+        padding: "20px"
     }
 
   return(

@@ -115,6 +115,19 @@ a{
   right: 0;
 }
 
+.square::before{
+  float: left;
+  padding-top: 120%;
+  content: "";
+}
+
+.square::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
 .side-margins{
   width: 85%;
   margin: 0 auto;
@@ -126,17 +139,6 @@ a{
 }
 
 
-  .square::before{
-    float: left;
-    padding-top: 120%;
-    content: "";
-  }
-
-  .square::after{
-    display: block;
-    content: "";
-    clear: both;
-  }
 
 
 
