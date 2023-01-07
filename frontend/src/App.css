@@ -133,7 +133,7 @@ a{
   }
 
   .square::after{
-    display: grid;
+    display: block;
     content: "";
     clear: both;
   }
