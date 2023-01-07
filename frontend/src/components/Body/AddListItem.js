@@ -4,15 +4,9 @@ const GridComp = ({gridClass, addItems}) => {
         doubleRows: "repeat(2, 1fr)"
     }
 
-    const activeRow = {
-        single: "1fr",
-        doubleRows: "repeat(2, 1fr)"
-    }
-
     const styles= {
         display: "grid",
         gridTemplateColumns: activeColumn[gridClass],
-        gridTemplateRows: activeRow[gridClass],
         gap: ".5em",
         marginTop: "10px"
     }
@@ -31,7 +25,7 @@ export default function AddListItem({addHeader, gridClass, addItems}){
 
     const activeRow = {
         single: "auto 1fr",
-        doubleRows: "auto 1fr"
+        doubleRows: "repeat(2, 1fr)"
     }
 
     const styles= {
