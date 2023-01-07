@@ -8,7 +8,7 @@ const GridComp = ({gridClass, addItems}) => {
         display: "grid",
         gridTemplateColumns: activeColumn[gridClass],
         gap: ".5em",
-        height: "90%"
+        height: "95%"
     }
 
 
