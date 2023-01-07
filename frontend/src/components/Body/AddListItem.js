@@ -8,10 +8,9 @@ const GridComp = ({gridClass, addItems}) => {
         display: "grid",
         gridTemplateColumns: activeColumn[gridClass],
         gap: ".5em",
-        height: "95%"
+        height: "92%",
+        marginTop: "10px"
     }
-
-
 
     return(    
     <div style={styles} className="yellow-div">
