@@ -9,6 +9,7 @@ const GridComp = ({gridClass, addItems}) => {
         gridTemplateColumns: activeColumn[gridClass],
         gap: ".5em",
         marginTop: "10px",
+        height: "100%"
     }
 
 
