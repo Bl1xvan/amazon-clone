@@ -4,15 +4,21 @@ const GridComp = ({gridClass, addItems}) => {
         doubleRows: "repeat(2, 1fr)"
     }
 
+    const activeRow = {
+        single: "1fr",
+        doubleRows: "repeat(2, 1fr)"
+    }
+
     const styles= {
         display: "grid",
         gridTemplateColumns: activeColumn[gridClass],
+        gridTemplateRows: activeRow[gridClass],
         gap: ".5em",
         marginTop: "10px"
     }
 
     return(    
-    <div style={styles} className="add-group-grid ">
+    <div style={styles} className="add-group-grid">
         {addItems.map(item => {
             const {image, title, link} = item
             return(<div className="magenta-div"><h4>{title}</h4><p>{image}</p><p>{link}</p></div>)
