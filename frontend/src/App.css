@@ -124,9 +124,8 @@ a{
   }
 
   .square::after{
-    display: block;
+    display: grid;
     content: "";
-    clear: both;
   }
 }
 
