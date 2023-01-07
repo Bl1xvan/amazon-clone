@@ -126,6 +126,7 @@ a{
   .square::after{
     display: grid;
     content: "";
+    clear: both;
   }
 }
 
