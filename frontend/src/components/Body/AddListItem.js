@@ -9,11 +9,6 @@ const GridComp = ({gridClass, addItems}) => {
         gridTemplateColumns: activeColumn[gridClass],
         gap: ".5em",
         marginTop: "10px",
-        position: "absolute",
-        top: "60px",
-        left: "0",
-        right: "0",
-        bottom: "0"
     }
 
 
@@ -39,12 +34,16 @@ export default function AddListItem({addHeader, gridClass, addItems}){
         display: "grid",
         padding: "20px",
         gridTemplateRows: activeRow[gridClass],
-        position: "relative"
+        position: "relative",
+        height: "100%"
     }
 
   return(
-  <div style={styles} className="square addstyle">
-    <h3 style={{position: "absolute", top: "0"}}>{addHeader}</h3>
-    <GridComp gridClass={gridClass} addItems={addItems}/>
-  </div>)
+  <div className="square addstyle">
+    <div style={styles}>
+        <h3>{addHeader}</h3>
+        <GridComp gridClass={gridClass} addItems={addItems}/>
+    </div>
+  </div>
+  )
 }
