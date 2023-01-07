@@ -8,8 +8,7 @@ const GridComp = ({gridClass, addItems}) => {
         display: "grid",
         gridTemplateColumns: activeColumn[gridClass],
         gap: ".5em",
-        marginTop: "10px",
-        height: "100%"
+        flexGrow: "10"
     }
 
 
@@ -28,13 +27,14 @@ export default function AddListItem({addHeader, gridClass, addItems}){
     const styles= {
         display: "flex",
         flexDirection: "column",
-        padding: "20px"
+        padding: "20px",
+        justifyContent: "stretch"
     }
 
   return(
   <div className="square addstyle">
     <div style={styles}>
-        <h3>{addHeader}</h3>
+        <h3 style={{flexGrow: "1"}}>{addHeader}</h3>
         <GridComp gridClass={gridClass} addItems={addItems}/>
     </div>
   </div>
