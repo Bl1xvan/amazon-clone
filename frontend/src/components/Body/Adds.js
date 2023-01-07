@@ -79,12 +79,15 @@ const addList = [
 export default function Adds(){
     const { width } = useWindowResize()
 
-    let activeList = (width > 657 && width < 983) || width >= 1307 ? addList.slice(0, 8) : addList
+    let activeList = (width > 657 && width <= 1079) || width > 1458  ? addList.slice(0, 8) : addList
     return(
-    <div id="addList1" className="grid-add-column grid-gap">
-        {activeList.map(item => {
-            const {addHeader, gridClass, addItems} = item
-            return(<AddListItem addHeader={addHeader} gridClass={gridClass} addItems={addItems} />)
-        })}
-    </div>)
+    <>
+        <div id="addList1" className="grid-add-column grid-gap top-margins">
+            {activeList.map(item => {
+                const {addHeader, gridClass, addItems} = item
+                return(<AddListItem addHeader={addHeader} gridClass={gridClass} addItems={addItems} />)
+            })}
+        </div>
+    </>
+    )
 }
