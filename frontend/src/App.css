@@ -152,5 +152,13 @@ a{
 }
 
 #main-nav img{
-  height: 20px;
+  height: 25px;
+}
+
+.round-border{
+  border-radius: 7px;
+}
+
+.no-border{
+  border: none;
 }

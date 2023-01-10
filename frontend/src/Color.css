@@ -22,3 +22,8 @@
 .addstyle{
     background-color: var(--addstyle);
 }
+
+.white-div{
+    background-color: white;
+    padding: 5px;
+}

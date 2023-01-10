@@ -15,8 +15,7 @@ export default function Topsection(){
 return(
         <div id="main-nav" className={navFlex[activeScreen]}>
             <div className="flex-row padded-top">
-                <span className="flex-grow-1"><img src="./hamburger1.png" alt=""/><img src="./amazon_logo.png" alt=""/></span>
-        
+                <span className="flex-grow-1"><img src="./hamburger1.png" alt=""/><img src="./amazon_logo1.png" alt=""/></span>
                 {width < 900 && <span className="flex-row flex-grow-1 flex-end"><span>Sign in</span><span>Cart</span></span>}
             </div>
             <SearchBar searchBarSize={searchBarSize[activeScreen]}/>
