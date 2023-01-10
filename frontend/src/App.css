@@ -61,7 +61,7 @@ a{
 }
 
 .flex-end{
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .flex-start{
@@ -74,6 +74,10 @@ a{
 
 .flex-stretch-basis{
   flex-basis: 100%;
+}
+
+.flex-grow-1{
+  flex-grow: 1;
 }
 
 .full-width{
@@ -147,6 +151,6 @@ a{
   margin-top: 25px
 }
 
-
-
-
+#main-nav img{
+  height: 20px;
+}

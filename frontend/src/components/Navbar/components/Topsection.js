@@ -10,16 +10,17 @@ export default function Topsection(){
 
   const searchBarSize = {
     desktop: "flex-row flex-stretch-3",
-    mobile: "full-width"
+    mobile: "flex-row full-width"
   }
 return(
-        <div className={navFlex[activeScreen]}>
-            <div className="flex-row flex-end padded-top">
-                <span>image icon here</span>
-                <span>amazon image here</span>
+        <div id="main-nav" className={navFlex[activeScreen]}>
+            <div className="flex-row padded-top">
+                <span className="flex-grow-1"><img src="./hamburger1.png" alt=""/><img src="./amazon_logo.png" alt=""/></span>
+        
+                {width < 900 && <span className="flex-row flex-grow-1 flex-end"><span>Sign in</span><span>Cart</span></span>}
             </div>
             <SearchBar searchBarSize={searchBarSize[activeScreen]}/>
-            <div className="flex-row flex-end padded-top" >
+            <div className="flex-row padded-top">
                 <span>sign in link here</span>
                 <span>Cart link here</span>
             </div>
