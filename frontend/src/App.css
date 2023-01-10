@@ -68,13 +68,18 @@ a{
   align-items: flex-start;
 }
 
-.flex-stretch{
-  align-self: stretch;
+.flex-stretch-3{
+  flex-grow: 3;
+}
+
+.flex-stretch-basis{
+  flex-basis: 100%;
 }
 
 .full-width{
   width: 100%;
 }
+
 
 .half-width{
   width: 50%;
