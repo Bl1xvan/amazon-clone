@@ -13,7 +13,7 @@ const GridComp = ({gridClass, addItems}) => {
     }
 
     return(    
-    <div style={styles} className="yellow-div">
+    <div style={styles}>
         {addItems.map(item => {
             const {image, title, link} = item
             return(<div className="magenta-div"><h4>{title}</h4><p>{image}</p><p>{link}</p></div>)

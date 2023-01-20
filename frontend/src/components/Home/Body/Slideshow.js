@@ -1,4 +1,4 @@
-import useDrag from "../../hooks/useDrag"
+import useDrag from "../../../hooks/useDrag"
 import Picture1 from '../../images/Picture1.jpg'
 import Picture2 from '../../images/Picture2.jpg'
 import Picture3 from '../../images/Picture3.jpg'

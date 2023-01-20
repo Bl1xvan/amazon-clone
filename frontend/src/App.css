@@ -60,6 +60,11 @@ a{
   flex-direction: row;
 }
 
+.flex-gap > * {
+  margin: 0 5px;
+}
+
+
 .flex-end{
   justify-content: flex-end;
 }

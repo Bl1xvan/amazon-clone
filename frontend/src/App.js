@@ -1,14 +1,17 @@
-import Navbar from "./components/Navbar/Navbar"
-import Body from "./components/Body/Body"
+import Login from "./components/Login/Login"
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import './Color.css'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Body />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<>Welcome!</>} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
