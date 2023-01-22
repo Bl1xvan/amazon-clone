@@ -1,10 +1,10 @@
 import useDrag from "../../../hooks/useDrag"
-import Picture1 from '../../images/Picture1.jpg'
-import Picture2 from '../../images/Picture2.jpg'
-import Picture3 from '../../images/Picture3.jpg'
-import Picture4 from '../../images/Picture4.jpg'
-import Picture5 from '../../images/Picture5.jpg'
-import Picture6 from '../../images/Picture6.jpg'
+import Picture1 from '../../../images/Picture1.jpg'
+import Picture2 from '../../../images/Picture2.jpg'
+import Picture3 from '../../../images/Picture3.jpg'
+import Picture4 from '../../../images/Picture4.jpg'
+import Picture5 from '../../../images/Picture5.jpg'
+import Picture6 from '../../../images/Picture6.jpg'
 export default function Slideshow() {
    useDrag("slideshow-container")
    

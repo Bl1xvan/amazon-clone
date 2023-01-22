@@ -1,7 +1,7 @@
 import Signin from "./Signin"
 import Slideshow from "./Slideshow"
 import Adds from "./Adds"
-import useWindowResize from "../../hooks/useWindowResize"
+import useWindowResize from "../../../hooks/useWindowResize"
 
 export default function Body() {
     const { width } = useWindowResize()

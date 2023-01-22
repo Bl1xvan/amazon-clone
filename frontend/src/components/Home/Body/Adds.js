@@ -1,5 +1,5 @@
 import AddListItem from "./AddListItem"
-import useWindowResize from "../../hooks/useWindowResize"
+import useWindowResize from "../../../hooks/useWindowResize"
 
 const addList = [
     {
