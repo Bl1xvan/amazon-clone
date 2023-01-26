@@ -1,7 +1,6 @@
-export default function Form({children}){
+export default function Form({formActive, children}){
     return(
-                <div className="grid-one-column">
-                    {children}
-                </div>
-           )
+    <form className="grid-one-column grid-small-gap magenta-div padded" style={{visibility: formActive? "visible" : "hidden" }}>
+        {children}
+    </form>)
 }
