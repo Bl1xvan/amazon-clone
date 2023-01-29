@@ -1,6 +1,7 @@
-export default function OneColumn({children}){
+export default function OneColumn({children, absolute}){
+    const givenClass = `grid-one-column ${absolute && `absolute-top`}`
     return(
-                <div className="grid-one-column">
+                <div className={givenClass}>
                     {children}
                 </div>
            )
