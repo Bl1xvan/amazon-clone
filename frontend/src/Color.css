@@ -12,7 +12,6 @@
 .gray-div{
     background-color: var(--darkgray);
     color: white;
-    padding: 10px;
 }
 
 .yellow-div{
@@ -26,4 +25,20 @@
 .white-div{
     background-color: white;
     padding: 5px;
+}
+
+.no-border-top{
+    border-left: 1px solid var(--darkgray);
+    border-right: 1px solid var(--darkgray);
+    border-bottom: 1px solid var(--darkgray);
+}
+
+.no-border-bottom{
+    border-left: 1px solid var(--darkgray);
+    border-right: 1px solid var(--darkgray);
+    border-top: 1px solid var(--darkgray);
+}
+
+.all-borders{
+    border: 1px solid var(--darkgray);
 }

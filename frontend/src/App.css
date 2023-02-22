@@ -29,6 +29,10 @@ input[type="checkbox"]{
   padding: 12px 0;
 }
 
+.padded-top-bottom{
+  padding: 10px;
+}
+
 .padded-left{
   padding: 0 30px;
 }
@@ -83,6 +87,10 @@ input[type="checkbox"]{
 
 .flex-end{
   justify-content: flex-end;
+}
+
+.space-between{
+  justify-content: space-between;
 }
 
 .flex-start{
@@ -157,10 +165,17 @@ input[type="checkbox"]{
   clear: both;
 }
 
+.side-margin-nowidth{
+  margin: 0 auto;
+}
 
 .side-margins{
   width: 85%;
   margin: 0 auto;
+}
+
+.bottom-margin-single{
+  margin-bottom: 20px;
 }
 
 .bottom-margins > * {
@@ -198,4 +213,16 @@ input[type="checkbox"]{
 .absolute-top{
   position: absolute;
   top: 0
+}
+
+.line-height{
+  line-height: 20px;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.bold{
+  font-weight: bolder;
 }
