@@ -70,6 +70,23 @@ input[type="checkbox"]{
   flex-direction: column;
 }
 
+.align-items-center{
+  align-items: center;
+}
+
+.word-wrap{
+  word-wrap: break-word;
+}
+
+.small-image{
+  width: 200px;
+  height: auto;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .flex-row{
   display: flex;
   flex-direction: row;
@@ -109,10 +126,13 @@ input[type="checkbox"]{
   flex-grow: 1;
 }
 
+.flex-grow-2{
+  flex-grow: 2;
+}
+
 .full-width{
   width: 100%;
 }
-
 
 .half-width{
   width: 50%;
