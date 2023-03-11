@@ -1,0 +1,25 @@
+input[value="searchterm"]{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+select[name="deals"]{
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-left: none;
+   border-top: none;
+   border-bottom: none;
+}
+
+#search-select{
+    display: block;
+    overflow-x: hidden;
+    width: auto;
+}
+
+#search-submit{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+}

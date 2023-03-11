@@ -25,12 +25,12 @@ input[type="checkbox"]{
   font-weight: bold;
 }
 
-.padded-top{
-  padding: 12px 0;
+.padded-top-bottom-15{
+  padding: 15px 0;
 }
 
-.padded-top-bottom{
-  padding: 10px;
+.padded-top-bottom-7{
+  padding: 7px;
 }
 
 .padded-left{

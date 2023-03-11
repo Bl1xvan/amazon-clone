@@ -13,9 +13,9 @@ export default function Topsection(){
     mobile: "flex-row full-width"
   }
 return(
-        <div id="main-nav" className={navFlex[activeScreen]}>
-            <div className="flex-row padded-top flex-gap">
-                <span className="flex-grow-1">
+        <div id="main-nav" className={`padded-top-bottom-15 ${navFlex[activeScreen]}`}>
+            <div className="flex-row padded-top-bottom-7 flex-gap">
+                <span className="flex-grow-5">
                 {width < 900 && <img src="./hamburger1.png" alt=""/> }
                   <img src="./amazon_logo1.png" alt=""/>
                 </span>
